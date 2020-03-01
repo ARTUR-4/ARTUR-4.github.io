@@ -9,6 +9,7 @@ body{
 	width: 100%;
 	background-color: #000;
 	z-index: 100000;
+	min-width: 600px;
 	}
 .top-menu-btn{
 	position: relative;
@@ -32,6 +33,7 @@ body{
 .box{
 	position: relative;
 	width: 100%;
+	min-width: 600px;
 }
 #ad-box{
 	height: 200px;
@@ -80,7 +82,7 @@ body{
 	position: absolute;
 	left: 75%;
 	top: 50%;
-	min-width: 40%;
+	
 	transform: translate(-50%,-50%);
 	font-size: 30px;
 	color: #fff;
@@ -96,30 +98,26 @@ body{
 	width: 200px;
 }
 #box3{
-	height: 1000px;
+	padding-top: 25px;
+	padding-bottom: 100px;
 	background-color: red;
+	text-align: center;
 	
 }
 .box3-card{
-	position: absolute;
+	position: relative;
 	height: 800px;
 	width: 400px;
 	padding: 50px;
 	top: 50px;
 	background-color: red;
+	display: inline-block;
 
-}
-#box3-card1{
-	right: 51%;
-}
-#box3-card2{
-	left: 51%;
 }
 .box3-card-title{
 	color: red;
 	font-size: 30px;
 	text-align: center;
-}
 }
 .box3-card-title a{
 	text-decoration: none;
@@ -327,5 +325,16 @@ body{
 @media(max-width: 360px){
 	.box{
 		width: 100%;
+	}
+}
+#box4-more{
+	width: 100%;
+	margin-left: 5%;
+	margin-right:5%;
+}
+@media(max-width: 890px){
+	#box2-title{
+		width: 90%;
+		left: 50%;
 	}
 }
