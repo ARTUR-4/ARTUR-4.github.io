@@ -324,3 +324,8 @@ body{
 	transition-duration: 200ms;
 	transition-property: transform;
 }
+@media(max-width: 360px){
+	.box{
+		width: 100%;
+	}
+}
